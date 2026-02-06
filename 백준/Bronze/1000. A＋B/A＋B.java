@@ -7,9 +7,9 @@ import java.util.StringTokenizer;
 
 public class Main{
     public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-        StringTokenizer st = new StringTokenizer(br.readLine());
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));          // BufferedReader type variable br with InputStreamReader(String type)
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));        // BufferedWriter type variable bw with InputStreamWriter
+        StringTokenizer st = new StringTokenizer(br.readLine());                           // StringTokenizer type variable 
         int a = Integer.parseInt(st.nextToken());
         int b = Integer.parseInt(st.nextToken());
         bw.write(String.valueOf(a + b));
@@ -17,4 +17,5 @@ public class Main{
         bw.close();
         br.close();
     }
+
 }
