@@ -9,7 +9,7 @@ public class Main{
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));          // BufferedReader type variable br with InputStreamReader(String type)
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));        // BufferedWriter type variable bw with InputStreamWriter
-        StringTokenizer st = new StringTokenizer(br.readLine());                           // StringTokenizer type variable 
+        StringTokenizer st = new StringTokenizer(br.readLine());                           // StringTokenizer type variable st with readLine() : read line by line
         int a = Integer.parseInt(st.nextToken());
         int b = Integer.parseInt(st.nextToken());
         bw.write(String.valueOf(a + b));
