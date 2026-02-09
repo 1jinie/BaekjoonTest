@@ -5,6 +5,7 @@ public class Main{
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int b = sc.nextInt();
-        System.out.println((double)a / (double)b);
+        System.out.println((double)a / (double)b);            // Type casting : Integer type a & b to double type
     }
+
 }
