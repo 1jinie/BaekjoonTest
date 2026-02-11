@@ -7,7 +7,8 @@ public class Main{
         for(int i = 1; i <= arr.length; i++){
             int a = sc.nextInt();
             int b = sc.nextInt();
-            System.out.printf("Case #%d: %d\n", i, a + b);
+            System.out.printf("Case #%d: %d\n", i, a + b);                // set format
         }
     }
+
 }
