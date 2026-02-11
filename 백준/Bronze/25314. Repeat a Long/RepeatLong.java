@@ -3,10 +3,11 @@ import java.util.Scanner;
 public class Main{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        for(int i = 0; i <= ((n - 1) / 4); i++){
+        int n = sc.nextInt();                                       // number of bytes
+        for(int i = 0; i <= ((n - 1) / 4); i++){                    // Reapeat "long " every 4 bytes
             System.out.print("long ");
         }
         System.out.print("int");
     }
+
 }
