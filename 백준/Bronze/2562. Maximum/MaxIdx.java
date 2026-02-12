@@ -9,9 +9,9 @@ public class Main{
         for(int i = 0; i < arr.length; i++){
             arr[i] = Integer.parseInt(br.readLine());
         }
-        int max = arr[0];
-        int idx = 1;
-        for(int j = 0; j < arr.length; j++){
+        int max = arr[0];                                                                    // initialize max
+        int idx = 1;                                                                         // initialize idx
+        for(int j = 0; j < arr.length; j++){                                                 // find max & idx
             if(arr[j] > max){
                 max = arr[j];
                 idx = j + 1;
@@ -21,3 +21,4 @@ public class Main{
         System.out.println(idx);
     }
 }
+
