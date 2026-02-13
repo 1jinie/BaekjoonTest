@@ -7,10 +7,10 @@ public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
-        int[] subjects = new int[n];
+        int[] subjects = new int[n];                                                            // number of subjects
         StringTokenizer st = new StringTokenizer(br.readLine());
         int max = 0;
-        for(int i = 0; i < subjects.length; i++){
+        for(int i = 0; i < subjects.length; i++){                                               // input score and calculate maximum
             int score = Integer.parseInt(st.nextToken());
             subjects[i] = score;
             if(score > max){
@@ -18,9 +18,10 @@ public class Main {
             }
         }
         float total = 0f;
-        for(int k : subjects){
+        for(int k : subjects){                                                                  // calculate addition and average
             total += ((float) k /(float) max * 100);
         }
         System.out.println(total / subjects.length);
     }
+
 }
