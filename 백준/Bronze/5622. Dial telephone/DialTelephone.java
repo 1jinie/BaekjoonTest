@@ -5,12 +5,12 @@ import java.io.InputStreamReader;
 public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String s = br.readLine();
+        String s = br.readLine();                                                            // Capital alphabet
         int time = 0;
-        for(int i = 0; i < s.length(); i++) {
+        for(int i = 0; i < s.length(); i++) {                                                // for each alphabet
             String al = s.substring(i, i + 1);
             int num = 0;
-            switch (al) {
+            switch (al) {                                                                    // A-C : 3s, D-F : 4s ...
                 case "A" : case "B" : case "C" : num = 3; 
                 break;
                 case "D" : case "E" : case "F" : num = 4; 
@@ -29,8 +29,9 @@ public class Main {
                 break;
                 default : num = 2;
             };
-            time += num;
+            time += num;                                                                     // total time
         }
         System.out.println(time);
     }
 }
+
