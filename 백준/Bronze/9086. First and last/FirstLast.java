@@ -5,11 +5,12 @@ import java.io.InputStreamReader;
 public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int t = Integer.parseInt(br.readLine());
-        for(int i = 0; i < t; i++){
+        int t = Integer.parseInt(br.readLine());                                                // how many word
+        for(int i = 0; i < t; i++){                                                             // every word
             String s = br.readLine();
-            int last = s.length();
+            int last = s.length();                                                              // last index
             System.out.println(s.substring(0, 1) + s.substring(last - 1, last));
         }
     }
+
 }
