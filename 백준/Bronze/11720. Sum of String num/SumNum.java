@@ -8,9 +8,10 @@ public class Main {
         int n = Integer.parseInt(br.readLine());
         String s = br.readLine();
         int sum = 0;
-        for(int i = 0; i < n; i++){
+        for(int i = 0; i < n; i++){                                                            // sum of each
             sum += Integer.parseInt(s.substring(i, i + 1));
         }
         System.out.println(sum);
     }
+
 }
