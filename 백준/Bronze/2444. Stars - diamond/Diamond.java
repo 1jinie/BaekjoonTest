@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
-        for(int i = 1; i <= n; i++){
+        for(int i = 1; i <= n; i++){                                                        // 1st to 5th (Triangle)
             for(int j = 0; j < n - i; j++){
                 System.out.print(" ");
             }
@@ -15,7 +15,7 @@ public class Main {
             }
             System.out.println();
         }
-        for(int i = n - 1; i >= 1; i--){
+        for(int i = n - 1; i >= 1; i--){                                                    // 6th to 9th (Reversed triangle)
             for(int j = 0; j < n - i; j++){
                 System.out.print(" ");
             }
