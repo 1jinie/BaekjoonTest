@@ -7,7 +7,7 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String s = br.readLine();
         if(s.contains("c=")){
-            s = s.replace("c=", "@");
+            s = s.replace("c=", "@");                                                                // replace "c=" with "@"
         } if(s.contains("c-")){
             s = s.replace("c-", "@");
         } if(s.contains("dz=")){
@@ -25,4 +25,5 @@ public class Main {
         }
         System.out.println(s.length());
     }
+
 }
