@@ -10,16 +10,12 @@ public class Main {
         int n = Integer.parseInt(st1.nextToken());
         int m = Integer.parseInt(st1.nextToken());
         int[][] a = new int[n][m];
-        for(int i = 0; i < n; i++){
-            StringTokenizer st2 = new StringTokenizer(br.readLine());
-            for(int j = 0; j < m; j++){
-                a[i][j] = Integer.parseInt(st2.nextToken());
-            }
-        }
-        for(int i = 0; i < n; i++){
-            StringTokenizer st2 = new StringTokenizer(br.readLine());
-            for(int j = 0; j < m; j++){
-                a[i][j] += Integer.parseInt(st2.nextToken());
+        for(int k = 0; k < 2; k++{
+            for(int i = 0; i < n; i++){
+                StringTokenizer st2 = new StringTokenizer(br.readLine());
+                for(int j = 0; j < m; j++){
+                    a[i][j] += Integer.parseInt(st2.nextToken());
+                }
             }
         }
         for(int i = 0; i < n; i++){
