@@ -10,11 +10,11 @@ public class Main {
         int max = arr[0][0];
         int n = 1;
         int m = 1;
-        for(int i = 0; i < arr.length; i++){
+        for(int i = 0; i < arr.length; i++){                                                // row
             StringTokenizer st = new StringTokenizer(br.readLine());
-            for(int j = 0; j < arr[0].length; j++){
+            for(int j = 0; j < arr[0].length; j++){                                         // column
                 arr[i][j] = Integer.parseInt(st.nextToken());
-                if(arr[i][j] > max){
+                if(arr[i][j] > max){                                                        // find max
                     max = arr[i][j];
                     n = i + 1;
                     m = j + 1;
@@ -24,4 +24,5 @@ public class Main {
         System.out.println(max);
         System.out.println(n + " " + m);
     }
+
 }
