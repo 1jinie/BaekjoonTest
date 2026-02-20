@@ -7,10 +7,11 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
         int length = 2;
-        for(int i = 0; i < n; i++){
+        for(int i = 0; i < n; i++){                                                        // points on length
             length += (length - 1);
         }
         int point = (int)Math.pow(length, 2);
         System.out.println(point);
     }
 }
+
