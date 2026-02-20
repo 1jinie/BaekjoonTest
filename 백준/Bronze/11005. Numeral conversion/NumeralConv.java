@@ -10,7 +10,7 @@ public class Main {
         StringBuilder sb = new StringBuilder();
         int n = Integer.parseInt(st.nextToken());
         int b = Integer.parseInt(st.nextToken());
-        while(n > 0){
+        while(n > 0){                                                                        // repeat to quotient = 0
              int r =  n % b;
              if(r < 10) {
                  sb.append((char)(r + '0'));
@@ -22,3 +22,4 @@ public class Main {
         System.out.println(sb.reverse());
     }
 }
+
