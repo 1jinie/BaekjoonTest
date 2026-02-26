@@ -10,7 +10,8 @@ public class Main {
         int a = Integer.parseInt(st.nextToken());
         int b = Integer.parseInt(st.nextToken());
         int v = Integer.parseInt(st.nextToken());
-        int days = (v - b - 1) / (a - b) + 1;
+        int days = (v - b - 1) / (a - b) + 1;                                        // (v - a + (a - b) - 1) / (a - b) + 1        // to ceil        // + 1 is for last day
         System.out.println(days);
     }
 }
+
