@@ -14,13 +14,14 @@ public class Main {
             if((a == 0) || (b == 0)){
                 break;
             }
-            if(b % a == 0){
+            if(b % a == 0){                                                                    // a is divisor of b
                 System.out.println("factor");
-            } else if(a % b == 0){
+            } else if(a % b == 0){                                                             // a is multiple of b
                 System.out.println("multiple");
-            } else{
+            } else{                                                                            // no relation between a and b
                 System.out.println("neither");
             }
         }
     }
 }
+
