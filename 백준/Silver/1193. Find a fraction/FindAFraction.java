@@ -6,14 +6,14 @@ public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int x = Integer.parseInt(br.readLine());
-        int sum = 0;
-        int line = 0;
-        while(sum < x){
+        int sum = 0;                                                                        // summation all
+        int line = 0;                                                                       // this line
+        while(sum < x){                                                                     // find a line include x
             line++;
             sum += line;
         }
-        int prev = sum - line;
-        int pos = x - prev;
+        int prev = sum - line;                                                              // ordinal by previous line
+        int pos = x - prev;                                                                 // present line position
         int d, n;
         if(line % 2 == 0){
             n = pos;
@@ -24,4 +24,5 @@ public class Main {
         }
         System.out.printf("%d/%d", n, d);
     }
+
 }
