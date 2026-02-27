@@ -12,7 +12,7 @@ public class Main {
         int n = Integer.parseInt(st.nextToken());
         int k = Integer.parseInt(st.nextToken());
         List<Integer> list = new ArrayList<>();
-        for(int i = 1; i <= n; i++){
+        for(int i = 1; i <= n; i++){                                                        // if i is divisor of n, add it to list
             if(n % i == 0){
                 list.add(i);
             }
@@ -24,3 +24,4 @@ public class Main {
         }
     }
 }
+
